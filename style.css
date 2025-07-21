@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Share Tech", sans-serif;
+  height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
+  letter-spacing: 1.5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  color: white;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+header h1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.menu {
+  display: none;
+}
+
+
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.My {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  flex-direction: row-reverse;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 50%;
+}
+.img img {
+  width: 100%;
+  border-radius: 8px;
+}
+.text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 20px 25px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+}
+
+.Certificates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 350px;
+  border-radius: 8px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.img1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: a;
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  flex-direction: column;
+  border:   3px solid rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.text-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-logo img {
+  width: 50%;
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line {
+  width: 100%;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.line1 {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+}
+
+@media (max-width: 700px) {
+  header {
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .My {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .img {
+  width: 100%;
+}
+.img img {
+  width: 100%;
+  border-radius: 8px;
+}
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+
+.text a {
+  width: 75%;
+  transition: 0.4s ease-in-out;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%); /* يبدأ خارج الشاشة */
+    transition: transform 0.3s ease; /* الحركة */
+}
+
+.nav img {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.nav {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  transform: translateX(-100%);
+}
+}
